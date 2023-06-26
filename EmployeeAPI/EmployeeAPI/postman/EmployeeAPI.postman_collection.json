@@ -1,0 +1,508 @@
+{
+	"info": {
+		"_postman_id": "54b56263-7b8e-40f8-b24d-e7f335ef8e53",
+		"name": "EmployeeAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateEmployee - Manager (IT)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"employeeName\": \"Ronnie Boss\",\n    \"dateOfBirth\": \"1998-09-11\",\n    \"emailAddress\": \"ronnieb@gmail.com\",\n    \"salary\": \"150000.00\",\n    \"employeePosition\": \"Manager\",\n    \"reportingManager\": null,\n    \"department\": \"IT\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/empapi/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"empapi",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateEmployee - Developer (IT)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"employeeName\": \"Bob Wharton\",\n    \"dateOfBirth\": \"1998-09-11\",\n    \"emailAddress\": \"bobw@gmail.com\",\n    \"salary\": \"90000.00\",\n    \"employeePosition\" :\"Developer\",\n    \"reportingManager\": {\n        \"id\": 1\n    },\n    \"department\": \"IT\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/empapi/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"empapi",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateEmployee - QA_Tester (IT)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"employeeName\": \"Jane Smith\",\n    \"dateOfBirth\": \"1995-01-11\",\n    \"emailAddress\": \"janes@gmail.com\",\n    \"employeePosition\": \"QA_Tester\",\n    \"salary\": \"85000.00\",\n    \"reportingManager\": {\n        \"id\": 1\n    },\n    \"department\": \"IT\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/empapi/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"empapi",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateEmployee - Manager (Finance)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"employeeName\": \"Adam Taylor\",\n    \"dateOfBirth\": \"1980-01-11\",\n    \"emailAddress\": \"adamt@gmail.com\",\n    \"salary\": \"120000.00\",\n    \"employeePosition\": \"Manager\",\n    \"reportingManagerId\": null,\n    \"department\": \"Finance\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/empapi/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"empapi",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateEmployee - QA_Tester (Finance)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"employeeName\": \"Anna Sosnic\",\n    \"dateOfBirth\": \"1990-01-11\",\n    \"emailAddress\": \"annas@gmail.com\",\n    \"salary\": \"90000.00\",\n    \"employeePosition\": \"QA_Tester\",\n    \"reportingManager\": {\n        \"id\": 4\n    },\n    \"department\": \"Finance\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/empapi/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"empapi",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateEmployee - Developer (Finance)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"employeeName\": \"Mark Wagoner\",\n    \"dateOfBirth\": \"1990-01-11\",\n    \"emailAddress\": \"markw@gmail.com\",\n    \"salary\": \"95000.00\",\n    \"employeePosition\": \"Developer\",\n    \"reportingManager\": {\n        \"id\": 4\n    },\n    \"department\": \"Finance\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/empapi/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"empapi",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateEmployee - QA_Tester 2 Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"employeeName\": \"Dominic Williams\",\n    \"dateOfBirth\": \"1995-01-11\",\n    \"emailAddress\": \"dominicw@gmail.com\",\n    \"employeePosition\": \"Developer\",\n    \"salary\": \"90000.00\",\n    \"reportingManager\": {\n        \"id\": 1\n    },\n    \"department\": \"IT\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/empapi/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"empapi",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateEmployee - Manager 2 (Finance)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"employeeName\": \"Matt Kane\",\n    \"dateOfBirth\": \"1990-05-11\",\n    \"emailAddress\": \"mattk@gmail.com\",\n    \"employeePosition\": \"Manager\",\n    \"salary\": \"90000.00\",\n    \"reportingManager\": {\n        \"id\": 4\n    },\n    \"department\": \"Finance\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/empapi/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"empapi",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateEmployee - Developer (Finance)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"employeeName\": \"Harry Ford\",\n    \"dateOfBirth\": \"1996-06-15\",\n    \"emailAddress\": \"harryf@gmail.com\",\n    \"employeePosition\": \"Developer\",\n    \"salary\": \"80000.00\",\n    \"reportingManager\": {\n        \"id\": 8\n    },\n    \"department\": \"Finance\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/empapi/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"empapi",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateEmployee - Developer (Finance) Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"employeeName\": \"Delmore Davidson\",\n    \"dateOfBirth\": \"1998-06-15\",\n    \"emailAddress\": \"delmored@gmail.com\",\n    \"employeePosition\": \"Developer\",\n    \"salary\": \"80000.00\",\n    \"department\": \"Finance\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/empapi/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"empapi",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllEmployees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/empapi/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"empapi",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateEmployee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {        \n        \"employeeName\": \"Bob Martin\",\n        \"dateOfBirth\": \"1980-01-11\",\n        \"emailAddress\": \"bobm@gmail.com\",\n        \"salary\": \"95000.00\",\n        \"employeePosition\": \"Developer\",\n        \"department\": \"Finance\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/empapi/employees/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"empapi",
+						"employees",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteEmployeeById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/empapi/employees/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"empapi",
+						"employees",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDepartmentStructureHier IT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/empapi/department/IT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"empapi",
+						"department",
+						"IT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDepartmentStructureHier Fin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/empapi/department/Finance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"empapi",
+						"department",
+						"Finance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calculateCostByDepartment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/costapi/department/IT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"costapi",
+						"department",
+						"IT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calculateCostByDepartment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/costapi/department/Finance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"costapi",
+						"department",
+						"Finance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calculateCostByManager Ronnie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/costapi/manager/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"costapi",
+						"manager",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calculateCostByManager Adam",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/costapi/manager/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"costapi",
+						"manager",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
