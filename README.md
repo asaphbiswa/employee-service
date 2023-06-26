@@ -15,7 +15,7 @@ Users of this API should be able to:
 - Calculate the cost allocation of a Department.
 - Calculate the cost allocation of a Manager.
 
-Method  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Endpoint &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Uses
+**Method  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Endpoint &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Uses**
 
 --------
 GET  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;/empapi/employees&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Find all employees\
