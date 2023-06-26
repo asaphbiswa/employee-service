@@ -53,4 +53,4 @@ Postman collection is attached to the source code in the postman folder:
 
 ## Download and Run
 
-> java -jar empapi.jar
+> java -jar EmployeeAPI_jar.jar
